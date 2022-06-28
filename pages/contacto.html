@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Contacto</title>
+</head>
+
+<body class="container">
+    <header>
+        <div class="divboton">
+            <button>Crear Cuenta</button>
+            <button>Iniciar sesion</button>
+        </div>
+        <div class="divLogo">
+            <a href="../index.html"><img
+                    src="https://yt3.ggpht.com/ytc/AKedOLQtmSo8SNNpRdeYtPfmJkjzgpw-JJbQckMrrj-u=s900-c-k-c0x00ffffff-no-rj"
+                    alt="" class="logo">
+        </div>
+        <div class="divbotonC">
+            <button> <img src="../assets/img/images.png" alt="" class="botonimg"> Mi carrito</button>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="contacto.html"><button>Contacto</button></a></li>
+            <li><a href="productos.html"><button>Productos</button>
+                    <ul>
+                        <li><button>Tablas</button></li>
+                        <li><button>Ruedas</button></li>
+                        <li><button>Trucks</button></li>
+                    </ul>
+                </a></li>
+            <li><a href="team.html"><button>Team</button></a></li>
+            <li><a href="videos.html"><button>Videos</button></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="contacto.php" method="post">
+            <fieldset class="Field">
+                <legend class="tipografiaMacWeb1">Datos personales</legend>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" required>
+                <input type="text" name="Documento" id="Documento" placeholder="Ingrese su Cedula" required>
+                <input type="text" name="Mail" id="Mail" placeholder="Ingrse su mail" required>
+                <input type="text" name="Password" id="Pasword" placeholder="Ingrese su contraseña" required>
+
+                <div>
+                    <label for="sexo">Hombre</label>
+                    <input type="radio" name="sexo" value="h">
+                    <label for="sexo">Mujer</label>
+                    <input type="radio" name="sexo" value="m">
+                    <label for="sexo">Otros</label>
+                    <input type="radio" name="sexo" value="Otros">
+                </div>
+
+                <div>
+                    <label for="Acepto">Acepta terminos y condiciones</label>
+                    <input type="checkbox" name="acepto" value="Si" required>
+                </div>
+
+
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar">
+
+            </fieldset>
+            <div class="containerCont">
+                <h2 class="ubiH">Ubicacion</h2>
+                <img src="../assets/img/screen.png" alt="" class="imgUbi">
+            </div>
+        </form>
+    </main>
+    <aside>
+
+    </aside>
+    <footer class="foo">
+
+        <h3 class="tipografiaMacWeb1">Nuestras Redes Sociales</h3>
+        <div class="iconoslinea">
+            <img src="../assets/img/icono insta.png" alt="" class="loginsta">
+
+
+            <img src="../assets/img/icono fc.png" alt="" class="logface">
+
+
+            <img src="../assets/img/icono yt.png" alt="" class="logyoutube">
+        </div>
+
+        <h4 class="tipografiaMacWeb1">Contacto</h4>
+        <img src="../assets/img/icono mail.png" alt="" class="logmsj"> Macskateshop@gmail.com
+        <br>
+        <br>
+        <img src="../assets/img/icono ubi.png" alt="" class="logubi"> Plaza Cagancha-Montevideo
+
+    </footer>
+
+
+
+</body>
+
+</html>
