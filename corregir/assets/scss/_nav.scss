@@ -1,0 +1,38 @@
+
+.nav {
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    background-color: $colorPrimario;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    grid-area: nav;
+   
+}
+
+
+.nav ul {
+    list-style: none;
+    padding-left: 3px;
+
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+}
+
+.nav ul li ul {
+    display: none;
+}
+
+.nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: $colorPrimario;
+
+}

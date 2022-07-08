@@ -1,0 +1,287 @@
+/*/mediaIndex/*/
+
+@media(max-width: 567px) {
+    .container {
+
+        grid-template-rows: 20% 100px auto auto;
+    }
+
+    .divLogo {
+        text-align: center;
+    }
+
+    .logo {
+        width: 20%;
+        height: 20%;
+    }
+
+    .divboton {
+        text-align: center;
+
+    }
+
+    .divbotonC {
+        text-align: center;
+    }
+
+    .botonimg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav {
+        background-color: rgba(0, 0, 0, 0.108);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .nav input{
+        display: none;
+    } 
+    .nav input:checked ~ ul {
+        display: flex;
+    }
+    
+    .nav label{
+        color: white;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .destacados {
+        text-align: center;
+    }
+
+    .destacadosPrimeraLinea {
+
+        width: 25%;
+        height: 25%;
+
+
+
+    }
+
+    .destacadosSegundaLinea {
+        width: 25%;
+        height: 25%;
+
+    }
+
+
+
+
+    /* Tipos de tipografia usados en la web*/
+
+    .tipografiaMacWeb {
+
+        font-size: 0%;
+    }
+
+
+
+    /*carrusel de fotos*/
+
+    .slide-inner {
+        height: calc(45px + 3em);
+    }
+
+    /*footer/*/
+
+
+    .loginsta {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logface {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logyoutube {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logmsj {
+        width: 10px;
+        height: 10px;
+    }
+
+    .logubi {
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+@media(min-width:568px) and (max-width:990px) {
+    .container {
+
+        grid-template-rows: 20% 100px auto auto;
+    }
+
+    .divLogo {
+        text-align: center;
+    }
+
+    .logo {
+        width: 20%;
+        height: 20%;
+    }
+
+    .divboton {
+        text-align: center;
+
+    }
+
+    .divbotonC {
+        text-align: center;
+    }
+
+    .botonimg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav {
+        height: 80px;
+
+    }
+    .nav input{
+        display: none;
+    }
+    .nav label{
+        display: none;
+        
+        
+    }
+
+
+    .destacados {
+        text-align: center;
+    }
+
+    .destacadosPrimeraLinea {
+
+        width: 25%;
+        height: 25%;
+
+
+
+    }
+
+    .destacadosSegundaLinea {
+        width: 25%;
+        height: 25%;
+
+    }
+
+
+
+
+    /* Tipos de tipografia usados en la web*/
+
+    .tipografiaMacWeb {
+
+        font-size: 0%;
+    }
+
+
+
+    
+
+
+}
+
+@media(min-width:991px) {
+    .logo {
+        width: 10%;
+        height: 10%;
+    }
+
+  
+    .nav input{
+        display: none;
+    }
+    .nav label{
+        display: none;
+        
+    }
+}
+
+@media(max-width:567px) {
+    .container {
+
+        grid-template-rows: 20% 100px auto auto;
+    }
+
+
+
+    .logo {
+        width: 20%;
+        height: 20%;
+    }
+
+    .divboton {
+        text-align: center;
+
+    }
+
+    .divbotonC {
+        text-align: center;
+    }
+
+    .botonimg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav {
+        height: 60px;
+
+    }
+
+    .Field {
+        height: 200px;
+        font-size: calc(1rem+1vw);
+    }
+
+    .imgUbi {
+        width: 400px;
+        height: 300px;
+    }
+
+
+    .loginsta {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logface {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logyoutube {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logmsj {
+        width: 10px;
+        height: 10px;
+    }
+
+    .logubi {
+        width: 10px;
+        height: 10px;
+    }
+}

@@ -1,0 +1,32 @@
+
+/*/ Productos /*/
+
+.containerProductos {
+    display: flex;
+    justify-content: center;
+}
+
+.cardPro {
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.cardimgPro {
+    height: 150px;
+    width: 150px;
+
+}
+
+.cardimgPro1 {
+    height: 150px;
+    width: 150px;
+}
+
+.cardp {
+    text-align: center;
+}
+

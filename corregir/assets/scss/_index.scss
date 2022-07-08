@@ -1,0 +1,59 @@
+
+/*/ index*/
+
+.container {
+    margin: 5%;
+    display: grid;
+    grid-template-areas: "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: 230px 80px auto auto;
+
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+
+.divLogo {
+    text-align: center;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.divboton {
+    text-align: right;
+    margin: 10px;
+    background-color: $colorPrimario;
+}
+
+.divbotonC {
+    text-align: right;
+}
+
+.botonimg {
+    width: 30px;
+    height: 30px;
+}
+

@@ -1,0 +1,41 @@
+.destacados {
+    text-align: center;
+}
+
+.destacadosPrimeraLinea {
+    margin: 2px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 5px 5px;
+    background-color:$colorSecundario ;
+    transition: all 1s;
+
+
+}
+.destacadosPrimeraLinea:hover{
+    transform: translate(50px,20px) scale(1.5)
+}
+
+.destacadosSegundaLinea {
+    margin: 2px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 5px 5px;
+    background-color: $colorSecundario;
+    transition: all 1s;
+}
+.destacadosSegundaLinea:hover{
+    transform: translate(50px,20px) scale(1.5)
+}
+
+
+
+
+/* Tipos de tipografia usados en la web*/
+
+.tipografiaMacWeb {
+    font-style: italic;
+    margin: 5px;
+}
