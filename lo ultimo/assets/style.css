@@ -1,0 +1,579 @@
+/*/ index*/
+
+.container {
+    margin: 5%;
+    display: grid;
+    grid-template-areas: "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: 230px 80px auto auto;
+
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+
+.divLogo {
+    text-align: center;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.divboton {
+    text-align: right;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.108);
+}
+
+.divbotonC {
+    text-align: right;
+}
+
+.botonimg {
+    width: 30px;
+    height: 30px;
+}
+.boton:hover{
+    background-color: grey;
+}
+
+.nav {
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.108);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    grid-area: nav;
+   
+}
+
+
+.nav ul {
+    list-style: none;
+    padding-left: 3px;
+
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+}
+
+.nav ul li ul {
+    display: none;
+}
+
+.nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.108);
+
+}
+
+
+
+
+.destacados {
+    text-align: center;
+}
+
+.destacadosPrimeraLinea {
+    margin: 2px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 5px 5px;
+    background-color: rgba(0, 0, 0, 0.34);
+    transition: all 1s;
+
+
+}
+.destacadosPrimeraLinea:hover{
+    transform: translate(50px,20px) scale(1.5)
+}
+
+.destacadosSegundaLinea {
+    margin: 2px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 5px 5px;
+    background-color: rgba(0, 0, 0, 0.34);
+    transition: all 1s;
+}
+.destacadosSegundaLinea:hover{
+    transform: translate(50px,20px) scale(1.5)
+}
+
+
+
+
+/* Tipos de tipografia usados en la web*/
+
+.tipografiaMacWeb {
+    font-style: italic;
+    margin: 5px;
+}
+
+
+
+
+/* footer */
+.foo{
+    margin: 60px;
+    background-color: rgba(0, 0, 0, 0.056);
+}
+.footer {
+    grid-area: footer;
+    margin: 30px;
+}
+
+.iconoslinea {
+    text-align: left;
+}
+
+.loginsta {
+    width: 50px;
+    height: 50px;
+}
+
+.logface {
+    width: 50px;
+    height: 50px;
+}
+
+.logyoutube {
+    width: 50px;
+    height: 50px;
+}
+
+.logmsj {
+    width: 25px;
+    height: 25px;
+}
+
+.logubi {
+    width: 25px;
+    height: 25px;
+}
+
+/*/mediaIndex/*/
+
+@media(max-width: 567px) {
+    .container {
+
+        grid-template-rows: 20% 100px auto auto;
+    }
+
+    .divLogo {
+        text-align: center;
+    }
+
+    .logo {
+        width: 20%;
+        height: 20%;
+    }
+
+    .divboton {
+        text-align: center;
+
+    }
+
+    .divbotonC {
+        text-align: center;
+    }
+
+    .botonimg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav {
+        height: 80px;
+
+    }
+    
+    
+ 
+
+    .destacados {
+        text-align: center;
+    }
+
+    .destacadosPrimeraLinea {
+
+        width: 25%;
+        height: 25%;
+
+
+
+    }
+
+    .destacadosSegundaLinea {
+        width: 25%;
+        height: 25%;
+
+    }
+
+
+
+
+    /* Tipos de tipografia usados en la web*/
+
+    .tipografiaMacWeb {
+
+        font-size: 0%;
+    }
+
+
+
+    /*carrusel de fotos*/
+
+    .slide-inner {
+        height: calc(45px + 3em);
+    }
+
+    /*footer/*/
+
+
+    .loginsta {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logface {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logyoutube {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logmsj {
+        width: 10px;
+        height: 10px;
+    }
+
+    .logubi {
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
+@media(min-width:568px) and (max-width:990px) {
+    .container {
+
+        grid-template-rows: 20% 100px auto auto;
+    }
+
+    .divLogo {
+        text-align: center;
+    }
+
+    .logo {
+        width: 20%;
+        height: 20%;
+    }
+
+    .divboton {
+        text-align: center;
+
+    }
+
+    .divbotonC {
+        text-align: center;
+    }
+
+    .botonimg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav {
+        height: 80px;
+
+    }
+    .nav input{
+        display: none;
+    }
+    .nav label{
+        display: none;
+        
+        
+    }
+
+
+    .destacados {
+        text-align: center;
+    }
+
+    .destacadosPrimeraLinea {
+
+        width: 25%;
+        height: 25%;
+
+
+
+    }
+
+    .destacadosSegundaLinea {
+        width: 25%;
+        height: 25%;
+
+    }
+
+
+
+
+    /* Tipos de tipografia usados en la web*/
+
+    .tipografiaMacWeb {
+
+        font-size: 0%;
+    }
+
+
+
+    
+
+
+}
+
+@media(min-width:991px) {
+    .logo {
+        width: 10%;
+        height: 10%;
+    }
+
+  
+    .nav input{
+        display: none;
+    }
+    .nav label{
+        display: none;
+        
+    }
+}
+
+
+
+
+/*/ Productos /*/
+
+.containerProductos {
+    display: flex;
+    justify-content: center;
+}
+
+.cardPro {
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.cardimgPro {
+    height: 150px;
+    width: 150px;
+
+}
+
+.cardimgPro1 {
+    height: 150px;
+    width: 150px;
+}
+
+.cardp {
+    text-align: center;
+}
+
+
+
+
+
+/*/ Contacto /*/
+.Field {
+    width: 100%;
+    height: 100px;
+}
+
+.containerCont {
+    display: inline-block;
+    justify-content: center;
+}
+
+.imgUbi {
+    width: 800PX;
+    height: 600px;
+}
+
+.ubiH {
+    text-align: center;
+    font-style: italic;
+    margin: 5px;
+}
+
+@media(max-width:567px) {
+    .container {
+
+        grid-template-rows: 20% 100px auto auto;
+    }
+
+
+
+    .logo {
+        width: 20%;
+        height: 20%;
+    }
+
+    .divboton {
+        text-align: center;
+
+    }
+
+    .divbotonC {
+        text-align: center;
+    }
+
+    .botonimg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav {
+        height: 60px;
+
+    }
+
+    .Field {
+        height: 200px;
+        font-size: calc(1rem+1vw);
+    }
+
+    .imgUbi {
+        width: 400px;
+        height: 300px;
+    }
+
+
+    .loginsta {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logface {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logyoutube {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logmsj {
+        width: 10px;
+        height: 10px;
+    }
+
+    .logubi {
+        width: 10px;
+        height: 10px;
+    }
+}
+    .input:focus{
+        width: 200px;
+        height: 30px;
+    }
+
+    
+
+
+/*/ Videos /*/
+.containerVid {
+    display: flex;
+    justify-content: center;
+}
+
+.cardVid {
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardVidVid {
+    height: 200px;
+    width: 200px;
+}
+
+.cardVid1 {
+    height: 200px;
+    width: 200px;
+
+}
+
+.vidP {
+    text-align: center;
+}
+
+.containerGrande {
+    display: flex;
+    justify-content: center;
+}
+
+.cardGrande {
+    width: 500px;
+    height: 500px;
+
+
+}
+
+.cardGrandeGrande {
+    height: 500px;
+    width: 500px;
+}
+
+.cardGrande1 {
+    height: 500px;
+    width: 500px;
+}
+
+.GrandeH {
+    text-align: center;
+} 
+
+/*//animaciones/*/
+
